@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'sudo docker build -t hungle11/jenkins-docker:latest .'
+				sh 'docker build -t hungle11/jenkins-docker:latest .'
 			}
 		}
 
