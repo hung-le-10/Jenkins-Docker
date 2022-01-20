@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t jenkins-docker:latest .'
+				sh 'docker build -t hungle11/docker:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push hungle11/jenkins-docker:latest'
+				sh 'docker push hungle11/docker:latest'
 			}
 		}
 	}
